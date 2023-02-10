@@ -40,7 +40,7 @@ setup(
       "version_format": "{tag}.dev{sha}",
       "starting_version": "0.0.1"
     },
-    description="GC-parking forecastingPipeline for forecasting of parking spaces",
+    description="Parking forecasting pipeline for forecasting of parking spaces",
     long_description=open('README.md').read(),
     packages=find_packages('src'),
     package_dir={'': 'src'},

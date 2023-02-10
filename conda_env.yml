@@ -1,13 +1,54 @@
-name: conda_env
+name: PMV4Cast
+channels:
+  - conda-forge
+  - conda-forge/label/gcc7
+  - pdrops
+  #- saravji
 dependencies:
-  - pandas=0.23.4
-  - pytest=5.3.1
-  - pytest-cov=2.8.1
-  - numpy=1.17.4
-  - nbconvert=5.6.1
-  - nbformat=4.4.0
+  #- python=3.6.7
+  # - pandas>=0.20.3
+  # - numpy>=1.16.1
+  # - pytest #=3.2.1
+  # - pytest-cov #=2.5.1
+  # - pytest-xdist
+  # - nbconvert #=5.3.1
+  # - nbformat #=4.4.0
+  # - pylint
+  # - matplotlib
+  # - notebook
+  - tensorflow=2.0.0
+  # - keras=2.2.4
+#  - flask
+#  - gunicorn
+  - pip>=19.1.1
   - pip:
-    - azureml-sdk
-    - joblib==0.14.1
-    - matplotlib==3.1.2
-    - scikit-learn==0.22.1
+    - pandas #>=0.20.3
+    - numpy #>=1.16.1
+    - pytest #=3.2.1
+    - pytest-cov #=2.5.1
+    - pytest-xdist
+    - matplotlib
+    - schedule
+    - influxdb
+# extra   --------------------------
+  #- pandas-profiling
+  #- hyperopt
+  #- hyperas
+  #- scipy
+  #- scikit-learn
+  #- tqdm>=4.32.1
+  #- torch>=1.1.0
+  #- torchvision>=0.3.0
+  #- test-tube>=0.6.9
+  #- pytorch-lightning>=0.4.6
+  # - pmdarima #saravji
+  # - scikit-optimize
+  #- cufflinks-py
+  #- plotly
+  # - pip>=19.1.1 #=19.2.3 #-py37_0
+  # - pip:
+  #   - talos
+  #   - deepquantiles
+  #   - timeserio
+  #   - pytruth
+  #   - pyro-ppl[extras]

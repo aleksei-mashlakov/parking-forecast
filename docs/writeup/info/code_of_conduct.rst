@@ -1,1 +1,0 @@
-.. mdinclude:: ../../data_science_code_of_conduct.md

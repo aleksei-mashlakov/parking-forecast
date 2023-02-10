@@ -7,7 +7,9 @@ along with any more generic functions.
 
 Consider moving generic functions into the shared statoilds package.
 """
+import numpy as np
 import pandas as pd
+import scipy.stats as st
 
 
 def my_feature_xxx(df: pd.DataFrame):
@@ -26,3 +28,8 @@ def my_feature_xxx(df: pd.DataFrame):
     # CODE HERE
 
     return df
+
+
+def quantize(mean, var, q):
+    z_score = st.norm.ppf(q)
+    return mean + z_score * var
